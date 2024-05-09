@@ -1,0 +1,130 @@
+/* GENERAL */
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif; 
+    background-color: #f0f0f0; 
+    color: #333;
+}       
+
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;  
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    border-radius: 5%;
+    padding: 0;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    width: max-content;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    width: 125px;
+    text-align: center;
+}
+/* HEADER FORMAT */
+
+header {
+    position: sticky  ;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    background-color: black;
+    margin-top: 0;
+}
+
+#title {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top:0;
+    padding: 10px;
+
+}
+
+/* NAVIGATION TOP */
+
+#navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 25px;
+    padding-bottom: 10px;
+}
+
+#navigation-bar a:link {
+    color: aliceblue;
+}
+
+#navigation-bar a:active {
+    color: rgb(141, 161, 161);
+}
+
+
+/* DROPDOWN MENU */
+
+.dropdown {
+    position: relative;
+    border-left: 2px;
+    border-color: aliceblue;
+    border-left-style: solid;
+}
+
+#services-menu {
+    position: absolute;
+    top: 125%;
+    left: 0px;
+    z-index: 2;
+    padding-left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2vh);
+    transition: opacity 0.3s, transform 0.1s;
+}
+
+#services-menu a {
+    display: block;
+    white-space: nowrap;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.dropdown:hover #services-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    background-color: black;
+    border-radius: 5%;
+}

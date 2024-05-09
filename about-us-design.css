@@ -1,0 +1,30 @@
+/* ABOUT US CONTENT */
+
+#about-us-field {
+    margin: 0 auto;
+    padding-top: 20px;
+    display: block;
+    height: 100%;
+    width: 750px;
+}
+
+#image-1 {
+    padding: 10px;
+    height: 300px;
+    width: 200px;
+    float: left;
+    border-radius: 5%;
+}
+
+#image-2 {
+    margin-top: 200px;  
+    padding: 10px;
+    height: 300px;
+    width: 200px;
+    float: right;
+    border-radius: 5%;
+}
+
+#text-field {
+    padding: 10px;
+}

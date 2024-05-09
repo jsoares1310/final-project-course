@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=main.css>
-    <link rel="stylesheet" href="index-design.css">
-    <title>game&art.Mainpage</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="newsletter-design.css">
+    <title>game&art.Newsletter</title>
 </head>
 <style>
     * {
@@ -23,7 +23,7 @@
         <a href="index.html">
             <h1 id="title">Game&Art</h1>
         </a>
-        <nav aria-label="header-navegational-content">
+        <div aria-label="header-navegational-content">
             <ul id="navigation-bar" style="list-style: none;">
                 <li><a href="#">EXPLORE</a></li>
                 <li><a href="C:\Users\gilbe\final-project-course-1\about-us.html">ABOUT US</a></li>
@@ -39,34 +39,31 @@
                 </li>
                 <!-- END DROPDOWN MENU-->
             </ul>
-        </nav>
+        </div>
     </header>
 
     <!-- MAIN CONTENT -->
-    <nav id="main-content-format" aria-label="Main-content">
-        <article id="content1-format" aria-label="content-1">
-            <img id="img1" src="C:\Users\gilbe\Downloads\fb98418104136f34d0706279676990aa.jpg">
-            <h2>Content 1</h2>
-            <p>content body</p>
-        </article>
-        <article id="content2-format" aria-label="content-2">
-            <img id="img2" src="C:\Users\gilbe\Downloads\Journey's Edge.jpeg">
-            <p>
-            <h2>Content 2</h2>
-            <p>content body</p>
-            </p>
-        </article>
-        <article id="content3-format" aria-label="content-3">
-            <img id="img3" src="C:\Users\gilbe\Downloads\download (3).jpeg">
-            <h2>Content 3</h2>
-            <p>content body</p>
-        </article>
-        <article id="content4-format" aria-label="content-4">
-            <img id="img4" src="C:\Users\gilbe\Downloads\tatsuya on Twitter.jpeg">
-            <h2>Content 4</h2>
-            <p>content body</p>
-        </article>
-    </nav>
+    <div id="newsletter-format" aria-label="Newsletter">
+        <div id="title-format" aria-label="Title">
+            <h2>Sign Up to our Newsletter</h2>
+            <p>So that we can keep you updated on the new content of the Game&Art comunity</p>
+        </div>
+
+        <form action="/submit-form" method="post">
+            <div id="email-field" aria-label="Email-field">
+                <label for="email-id">Email</label>
+                <input id="email-id" type="email" name="Email" placeholder="example@gmail.com" required>
+            </div>
+            <div id="name-field" aria-label="Name-field">
+                <label for="email-id">Your Name</label>
+                <input id="email-id" type="text" name="Email" placeholder="James Smith...">
+            </div>
+            <div aria-label="Submit-button">
+                <input id="button-id" type="submit" value="Submit">
+            </div>
+        </form>
+
+    </div>
     <!-- END MAIN CONTENT -->
 
 </body>

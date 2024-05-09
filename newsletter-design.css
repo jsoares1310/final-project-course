@@ -1,0 +1,53 @@
+
+
+/* MAIN CONTENT FORMAT*/
+
+#newsletter-format {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 2px;
+    width: fit-content;
+    height: 300px;
+    margin: 100px auto;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+#title-format {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+input {
+    width: 150px;
+    height: 30px;
+    border-style: none;
+    border-bottom-style: solid;
+    border-color: rgb(27, 26, 26);
+}
+
+#name-field,
+#email-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+#button-id {
+    border-style: none  ;
+    height: 30px;
+    border-radius: 5%;
+}
