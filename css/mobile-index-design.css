@@ -1,0 +1,9 @@
+@media screen and (max-width: 575px) {
+    #main-content-format {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        padding: 2%;
+        gap: 1%;
+    }
+}

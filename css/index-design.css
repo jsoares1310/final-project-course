@@ -8,25 +8,20 @@
 
 
 .content-format {
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    transition: 0.5s;
+    position: relative;
+    width: 15rem;
+    height: 28rem;
     z-index: 1;
+    transition: 0.25s;
+}
 
+.content-format:hover {
+    transform: scale(1.1);
+    transition: 0.25s;
 }
 
 .img-format {
     width: 100%;
     height: 80%;
-    transition: 0.5s;
-    z-index: 1;
-}
-
-.img-format:hover {
-    position: absolute;
-    width: 110%;
-    height: 90%;
-    transition: 0.5s;
-    z-index: 999;
+    transition: 0.25s;   
 }
