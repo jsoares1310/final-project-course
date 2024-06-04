@@ -4,20 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="newsletter-design.css">
+    <link rel="stylesheet" href="css\base-css.css">
+    <link rel="stylesheet" href="css\newsletter-design.css">
     <title>game&art.Newsletter</title>
 </head>
-<style>
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-        list-style: none;
-    }
-</style>
-
 <body>
     <header>
         <a href="index.html">
@@ -55,12 +45,12 @@
                 <input id="email-id" type="email" name="Email" placeholder="example@gmail.com" required>
             </div>
             <div id="name-field" aria-label="Name-field">
-                <label for="email-id">Your Name</label>
-                <input id="email-id" type="text" name="Email" placeholder="James Smith...">
+                <label for="name-id">Your Name</label>
+                <input id="name-id" type="text" name="Name" placeholder="Example Name...">
             </div>
-            <div aria-label="Submit-button">
-                <input id="button-id" type="submit" value="Submit">
-            </div>
+
+            <button class="button-field" type="submit">Submit</button>
+
         </form>
 
     </div>

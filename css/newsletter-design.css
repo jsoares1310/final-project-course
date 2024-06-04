@@ -46,8 +46,11 @@ input {
     
 }
 
-#button-id {
-    border-style: none  ;
-    height: 30px;
-    border-radius: 5%;
+form button.button-field {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
