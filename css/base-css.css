@@ -97,15 +97,6 @@ header {
     color: rgb(141, 161, 161);
 }
 
-.dropdown:hover .down {
-    visibility: hidden;
-} 
-
-.haburguer-icon {
-    position: absolute  ;
-    visibility: hidden;
-}
-
 #services-menu {
     display: flex;
     flex-direction: row;

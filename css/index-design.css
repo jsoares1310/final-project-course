@@ -1,32 +1,44 @@
-#main-content-format {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    width: 100%;
-    height: auto;
-    padding: 2%;
-    align-content: space-evenly ;
+@media screen and (min-width:901px) {
+    #main-content-format {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 100%;
+        height: auto;
+        padding: 2%;
+        align-content: space-evenly;
+
+    }
+
+
+    .content-format {
+        width: 12rem;
+        height: fit-content;
+        z-index: 1;
+        transition: 0.25s;
+        justify-self: center;
+        margin: 2%;
+    }
+
+    .content-format:hover {
+        transform: scale(1.1);
+        transition: 0.25s;
+        z-index: 2;
+    }
+
+    .img-format {
+        border-radius: 5%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .dropdown:hover .down {
+        visibility: hidden;
+    } 
+
+    .haburguer-icon {
+        position: absolute  ;
+        visibility: hidden;
+    }
     
-}
-
-
-.content-format {   
-    width: 12rem;   
-    height: fit-content;
-    z-index: 1;
-    transition: 0.25s;
-    justify-self: center;
-    margin: 2%;
-}
-
-.content-format:hover {
-    transform: scale(1.1);
-    transition: 0.25s;
-    z-index: 2;
-}
-
-.img-format {
-    border-radius: 5%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
 }
