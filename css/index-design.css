@@ -3,16 +3,18 @@
     grid-template-columns: repeat(5,1fr);
     width: 100%;
     padding: 2%;
-    gap: 1%;
+    gap: 1%;    
+    align-content: space-evenly ;
 }
 
 
 .content-format {
     position: relative;
-    width: 15rem;
-    height: 28rem;
+    width: 15rem;   
+    height: 25rem;
     z-index: 1;
     transition: 0.25s;
+    justify-self: center;
 }
 
 .content-format:hover {
@@ -21,7 +23,7 @@
 }
 
 .img-format {
-    width: 100%;
+    border-radius: 5%;
+    width: 95%;
     height: 80%;
-    transition: 0.25s;   
 }

@@ -1,0 +1,33 @@
+@media screen and (max-width: 575px) {
+    /* HEADER FORMAT */
+
+    header {
+        display: flex;
+    }
+
+    .title {
+        font-size: var(--biggest-mobile);
+    }
+
+    .haburguer-icon {
+        position: absolute;
+        visibility: visible;  
+    }
+
+    .services-menu-title {
+        position: relative;
+        visibility: hidden;
+    }
+
+    .navigation-bar {
+        text-align: right   ;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        gap: 1%;
+        padding-bottom: 0;
+        transition: 0.2s;
+        font-size: var(--small-mobile);
+    }
+}

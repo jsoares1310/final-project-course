@@ -1,124 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    color: #333;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Lora", serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-    text-decoration: none;
-    color: aliceblue;
-    width: 100%;
-    height: 100%;
-}
-
-article img {
-    border-radius: 5%;
-    padding: 0;
-}
-
-h2 {
-    padding: 0;
-    margin: 0;
-    width: max-content;
-}
-
-li {
-    list-style: none;
-    width: 125px;
-    text-align: center;
-}
-
-/* HEADER FORMAT */
-
-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    color: aliceblue;
-    background-color: black;
-    margin-top: 0;
-    z-index: 3;
-}
-
-#title {
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    font-size: var(--biggest);
-    margin-top: 0;
-    padding: 10px;
-    background: var(--gradient-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
-
-/* NAVIGATION TOP */
-
-#navigation-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 25px;
-    padding-bottom: 10px;
-}
-
-#navigation-bar a:link {
-    color: aliceblue;
-}
-
-#navigation-bar a:active {
-    color: rgb(141, 161, 161);
-}
-
-
-/* DROPDOWN MENU */
-
-.dropdown {
-    position: relative;
-    border-left: 2px;
-    border-color: aliceblue;
-    border-left-style: solid;
-}
-
-#services-menu {
-    position: absolute;
-    top: 125%;
-    left: 0px;
-    z-index: 2;
-    padding-left: 0;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-2vh);
-    transition: opacity 0.3s, transform 0.1s;
-}
-
-#services-menu a {
-    display: block;
-    white-space: nowrap;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.dropdown:hover #services-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    background-color: black;
-    border-radius: 5%;
-}
-
-
 :root {
     font-size: 16px;
 
@@ -168,4 +47,128 @@ header {
     --dark-text-color: #a094b8;
     --dark-title-color: #d1c0f1;
     --dark-text-color-light: #a197b4;
+}
+
+/* HEADER FORMAT */
+
+header {
+    position:sticky;
+    color: aliceblue;
+    background-color: black;
+    z-index: 3;
+}
+
+.title {
+    text-align: center;
+    font-size: var(--h1);
+    padding:1%;
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* NAVIGATION TOP */
+
+.haburguer-icon {
+    position: absolute  ;
+    visibility: hidden;
+}
+
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4%;
+    transition: 0.2s;
+    font-size: var(--h4);
+}
+
+.navigation-bar li:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.navigation-bar a:link {
+    color: aliceblue;
+}
+
+.navigation-bar a:active {
+    color: rgb(141, 161, 161);
+}
+
+
+/* DROPDOWN MENU */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li { 
+    position: relative;
+    display: inline-block;
+}
+
+ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--white-color);
+    background: none;
+}
+
+ul li a:hover {
+    background-color: var(--black);
+}
+
+/* Dropdown menu styles */
+.dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.dropdown ul li {
+    display: block;
+}
+
+.dropdown ul li a {
+    padding: 4%;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover ul {
+    display: block;
+}
+
+/*  GENERAL SETUP */
+body {
+    font-family: "Lora", serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+li {
+    list-style: none;
 }
