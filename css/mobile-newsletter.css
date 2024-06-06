@@ -1,4 +1,32 @@
 @media screen and (max-width: 575px) {
-    
-    
+
+    #newsletter-format {
+        border-radius: 5%;
+        border-width: 1px;
+        width: 80%;
+        height: 18rem;
+        margin: 0 auto;
+        margin-top: 5%;
+        padding: 3%;
+        gap: 2%;
+
+    }
+
+
+    .title-container h2 {
+        font-size: var(--h1-mobile);
+    }
+
+    .title-container p {
+        font-size: var(--smaller-mobile);
+    }
+
+    #email-field label {
+        font-size: var(--smaller-mobile);
+    }
+
+    button {
+        font-size: var(--h1-mobile);
+        text-align: center;
+    }
 }
