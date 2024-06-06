@@ -1,8 +1,8 @@
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 900px) {
     #main-content-format {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        
+        grid-template-columns: repeat(6, 1fr);
+
     }
 
     .content-format {
@@ -18,7 +18,7 @@
     article h2.content-format {
         font-size: var(--h2-mobile);
     }
-    
+
 
     .down {
         visibility: hidden;

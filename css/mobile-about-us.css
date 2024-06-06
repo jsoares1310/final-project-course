@@ -1,0 +1,9 @@
+@media screen and (max-width: 575px) {
+    .img-3-img {
+        visibility: visible;
+    }
+
+    .img-2-img {
+        display: none;
+    }
+}

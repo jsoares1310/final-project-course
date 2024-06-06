@@ -4,27 +4,29 @@
     width: 100%;
     height: auto;
     padding: 2%;
-    gap: 1%;    
     align-content: space-evenly ;
+    
 }
 
 
-.content-format {
-    position: relative;
+.content-format {   
     width: 12rem;   
-    height: 20rem;
+    height: fit-content;
     z-index: 1;
     transition: 0.25s;
     justify-self: center;
+    margin: 2%;
 }
 
 .content-format:hover {
     transform: scale(1.1);
     transition: 0.25s;
+    z-index: 2;
 }
 
 .img-format {
     border-radius: 5%;
-    width: 95%;
-    height: 80%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }

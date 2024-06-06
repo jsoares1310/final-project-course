@@ -1,6 +1,4 @@
-@media screen and (max-width: 575px) {
-    /* HEADER FORMAT */
-
+@media screen and (max-width: 900px) {
     header {
         display: flex;
         flex-direction: column;
@@ -47,5 +45,4 @@
     .down {
         visibility: hidden;
     }
-    
 }

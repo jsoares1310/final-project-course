@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\base-css.css">
-    <link rel="stylesheet" href="css\mobile-base-css.css">
-    <link rel="stylesheet" href="css\newsletter-design.css">
-    <link rel="stylesheet" href="css\mobile-newsletter.css">
+    <link rel="stylesheet" href="/css/base-css.css">
+    <link rel="stylesheet" href="/css/mobile-base-css.css">
+    <link rel="stylesheet" href="/css/newsletter-design.css">
+    <link rel="stylesheet" href="/css/mobile-newsletter.css">
     <script src="https://kit.fontawesome.com/8b7c481cf3.js" crossorigin="anonymous"></script>
     <title>game&art.Newsletter</title>
 </head>
@@ -15,7 +15,7 @@
 <body>
     <header>
         <a href="index.html">
-            <p class="title">Game&Art</p>
+            <h1 class="title">Game&Art</h1>
         </a>
         <nav aria-label="header-navegational-content">
             <ul class="navigation-bar" style="list-style: none;">
@@ -24,13 +24,14 @@
                 <li><a href="#">POST YOUR ART</a></li>
                 <!-- DROPDOWN MENU-->
                 <li class="dropdown">
-                    <a id="services-menu" href="#">
+                    <div id="services-menu">
                         <p class="services-menu-title">
-                            MORE <i class="fa-solid fa-arrow-down down"></i>
+                            MORE 
                         </p>
+                        <i class="fa-solid fa-arrow-down down"></i>
                         <label class="haburguer-icon" for="index-checkbox"><i class="fa-solid fa-bars"></i></label>
                         <input id="index-checkbox" type="checkbox">
-                    </a>
+                    </div>
                     <ul>
                         <li><a href="#">ranking</a></li>
                         <li><a href="#">events</a></li>
@@ -45,17 +46,17 @@
 
     <!-- MAIN CONTENT -->
     <main id="newsletter-format" aria-label="Newsletter">
-        <div class="title-container" aria-label="Title">
+        <div class="title-container">
             <h2>Sign Up to our Newsletter</h2>
             <p>So that we can keep you updated on the new content of the Game&Art comunity</p>
         </div>
 
         <form action="/submit-form" method="post">
-            <div id="email-field" aria-label="Email-field">
+            <div id="email-field">
                 <label for="email-id">Email</label>
                 <input id="email-id" type="email" name="Email" placeholder="example@gmail.com" required>
             </div>
-            <div id="name-field" aria-label="Name-field">
+            <div id="name-field">
                 <label for="name-id">Your Name</label>
                 <input id="name-id" type="text" name="Name" placeholder="Example Name...">
             </div>
