@@ -52,10 +52,12 @@
 /* HEADER FORMAT */
 
 header {
+    position: -webkit-sticky;
     position:sticky;
     color: aliceblue;
     background-color: black;
     z-index: 3;
+    top: 0;
 }
 
 .title {
@@ -70,16 +72,11 @@ header {
 
 /* NAVIGATION TOP */
 
-.haburguer-icon {
-    position: absolute  ;
-    visibility: hidden;
-}
-
-
 .navigation-bar {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 1%;
     gap: 4%;
     transition: 0.2s;
     font-size: var(--h4);
@@ -98,6 +95,22 @@ header {
     color: rgb(141, 161, 161);
 }
 
+.dropdown:hover .down {
+    visibility: hidden;
+} 
+
+.haburguer-icon {
+    position: absolute  ;
+    visibility: hidden;
+}
+
+#services-menu {
+    display: flex;
+    justify-content: center;
+}
+
+
+
 
 /* DROPDOWN MENU */
 
@@ -114,7 +127,6 @@ ul li {
 
 ul li a {
     display: block;
-    padding: 10px 20px;
     text-decoration: none;
     color: var(--white-color);
     background: none;
@@ -126,12 +138,12 @@ ul li a:hover {
 
 /* Dropdown menu styles */
 .dropdown ul {
-    display: none;
+    visibility: hidden;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #333;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 2% 4% rgba(0,0,0,0.1);
 }
 
 .dropdown ul li {
@@ -140,15 +152,24 @@ ul li a:hover {
 
 .dropdown ul li a {
     padding: 4%;
+    
+}
+
+#index-checkbox {
+    visibility: hidden;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover ul {
-    display: block;
+.dropdown:hover ul  {
+    visibility: visible;
+    transition: 0.2s;
+    
+
 }
 
 /*  GENERAL SETUP */
 body {
+    box-sizing: border-box;
     font-family: "Lora", serif;
     margin: 0;
     padding: 0;

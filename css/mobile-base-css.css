@@ -3,15 +3,28 @@
 
     header {
         display: flex;
+        flex-direction: column;
     }
 
     .title {
-        font-size: var(--biggest-mobile);
+        font-size: var(--big-mobile);
+    }
+
+    
+    #services-menu {
+        display: flex;
+        justify-content: center;
     }
 
     .haburguer-icon {
         position: absolute;
-        visibility: visible;  
+        visibility: visible;
+        transform: scale(1.5);
+    }
+
+    .haburguer-icon:checked .dropdown ul {
+        display: block;
+        visibility: visible;
     }
 
     .services-menu-title {
@@ -20,14 +33,16 @@
     }
 
     .navigation-bar {
-        text-align: right   ;
         display: flex;
+        text-align: right;  
         flex-direction: row;
-        flex-wrap:wrap;
+        clear: both;
         justify-content: center;
-        gap: 1%;
-        padding-bottom: 0;
+        gap: 3%;
+        padding-bottom: 3%;
         transition: 0.2s;
-        font-size: var(--small-mobile);
+        font-size: var(--smaller-mobile);
     }
+
+    
 }

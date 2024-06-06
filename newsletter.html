@@ -5,36 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\base-css.css">
+    <link rel="stylesheet" href="css\mobile-base-css.css">
     <link rel="stylesheet" href="css\newsletter-design.css">
+    <link rel="stylesheet" href="css\mobile-newsletter.css">
+    <script src="https://kit.fontawesome.com/8b7c481cf3.js" crossorigin="anonymous"></script>
     <title>game&art.Newsletter</title>
 </head>
+
 <body>
     <header>
         <a href="index.html">
-            <h1 id="title">Game&Art</h1>
+            <p class="title">Game&Art</p>
         </a>
-        <div aria-label="header-navegational-content">
-            <ul id="navigation-bar" style="list-style: none;">
+        <nav aria-label="header-navegational-content">
+            <ul class="navigation-bar" style="list-style: none;">
                 <li><a href="#">EXPLORE</a></li>
-                <li><a href="C:\Users\gilbe\final-project-course-1\about-us.html">ABOUT US</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
                 <li><a href="#">POST YOUR ART</a></li>
                 <!-- DROPDOWN MENU-->
                 <li class="dropdown">
-                    <a href="#">MORE</a>
-                    <ul id="services-menu">
+                    <a id="services-menu" href="#">
+                        <p class="services-menu-title">
+                            MORE <i class="fa-solid fa-arrow-down down"></i>
+                        </p>
+                        <label class="haburguer-icon" for="index-checkbox"><i class="fa-solid fa-bars"></i></label>
+                        <input id="index-checkbox" type="checkbox">
+                    </a>
+                    <ul>
                         <li><a href="#">ranking</a></li>
                         <li><a href="#">events</a></li>
-                        <li><a href="C:\Users\gilbe\final-project-course-1\newsletter.html">newsletter</a></li>
+                        <li><a href="newsletter.html">newsletter</a></li>
                     </ul>
                 </li>
                 <!-- END DROPDOWN MENU-->
             </ul>
-        </div>
+        </nav>
     </header>
 
+
     <!-- MAIN CONTENT -->
-    <div id="newsletter-format" aria-label="Newsletter">
-        <div id="title-format" aria-label="Title">
+    <main id="newsletter-format" aria-label="Newsletter">
+        <div class="title-container" aria-label="Title">
             <h2>Sign Up to our Newsletter</h2>
             <p>So that we can keep you updated on the new content of the Game&Art comunity</p>
         </div>
@@ -53,7 +64,7 @@
 
         </form>
 
-    </div>
+    </main>
     <!-- END MAIN CONTENT -->
 
 </body>

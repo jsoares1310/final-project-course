@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="about-us-design.css">
+    <link rel="stylesheet" href="css\base-css.css">
+    <link rel="stylesheet" href="css\mobile-base-css.css">
+    <link rel="stylesheet" href="css\about-us-design.css">
+    <link rel="stylesheet" href="css\mobile-index-design.css">
+    <script src="https://kit.fontawesome.com/8b7c481cf3.js" crossorigin="anonymous"></script>
     <title>about-us.com</title>
 </head>
 <style>
@@ -21,36 +24,44 @@
 <body>
     <header>
         <a href="index.html">
-            <h1 id="title">Game&Art</h1>
+            <p class="title">Game&Art</p>
         </a>
-        <div aria-label="header-navegational-content">
-            <ul id="navigation-bar" style="list-style: none;">
+        <nav aria-label="header-navegational-content">
+            <ul class="navigation-bar" style="list-style: none;">
                 <li><a href="#">EXPLORE</a></li>
-                <li><a href="C:\Users\gilbe\final-project-course-1\about-us.html">ABOUT US</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
                 <li><a href="#">POST YOUR ART</a></li>
                 <!-- DROPDOWN MENU-->
                 <li class="dropdown">
-                    <a href="#">MORE</a>
-                    <ul id="services-menu">
+                    <a id="services-menu" href="#">
+                        <p class="services-menu-title">
+                            MORE <i class="fa-solid fa-arrow-down down"></i>
+                        </p>
+                        <label class="haburguer-icon" for="index-checkbox"><i class="fa-solid fa-bars"></i></label>
+                        <input id="index-checkbox" type="checkbox">
+                    </a>
+                    <ul>
                         <li><a href="#">ranking</a></li>
                         <li><a href="#">events</a></li>
-                        <li><a href="C:\Users\gilbe\final-project-course-1\newsletter.html">newsletter</a></li>
+                        <li><a href="newsletter.html">newsletter</a></li>
                     </ul>
                 </li>
                 <!-- END DROPDOWN MENU-->
             </ul>
-        </div>
+        </nav>
     </header>
-<!-- ABOUT US CONTENT -->
+
+    <!-- ABOUT US CONTENT -->
     <div id="about-us-field" aria-label="About Us">
         <div>
             <img id="image-1" src="C:\Users\gilbe\Downloads\download (4).jpeg">
         </div>
-        <div >
+        <div>
             <img id="image-2" src="C:\Users\gilbe\Downloads\Final Fantasy VII, Kevin Hong.jpeg">
         </div>
         <div id="text-field" aria-label="Welcoming Text">
-            <p><strong>Welcome to Game&Art</strong>, your ultimate destination for game art and fan art enthusiasts! At Game&Art, we're passionate about celebrating the creativity and talent within the gaming community.
+            <p><strong>Welcome to Game&Art</strong>, your ultimate destination for game art and fan art enthusiasts! At
+                Game&Art, we're passionate about celebrating the creativity and talent within the gaming community.
                 Whether you're an avid gamer, an aspiring artist, or simply appreciate the beauty of digital art, you'll
                 find a home here.
             </p>
